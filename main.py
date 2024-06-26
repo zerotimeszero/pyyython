@@ -14,8 +14,6 @@ else:
             print("Результат:", c * d)
         elif r == 4:
             print("Результат:", c / d)
-        elif r == 5:
-            print("Результат:", c ** d)
         else:
             print("Такой операции нет, до свидания!")
     else:
