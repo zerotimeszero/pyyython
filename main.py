@@ -13,66 +13,65 @@
 # for i in range(1+1,100+1):
 #     # print("|-|")
 #     print(i)
-import re
-
-user_name = input("Введите имя: ")
-
-name_pattern = r'^[A-Za-zА-Яа-я]+$'
-
-if re.match(name_pattern, user_name):
-    if user_name == "Денис":
-        print("Нет Денисам!")
-    elif user_name == ("Денис".lower()):
-        print("Нет Денисам!")
-    else:
-        while True:
-            op = input("какая операшн? ")
-            if op == "1":
-                a = int(input("введите первое число: "))
-                b = int(input("Введите второе число: "))
-                print("Результат:", a + b)
-            elif op == "2":
-                a = int(input("введите первое число: "))
-                b = int(input("Введите второе число: "))
-                print("Результат:", a - b)
-            elif op == "3":
-                a = int(input("введите первое число: "))
-                b = int(input("Введите второе число: "))
-                print("Результат:", a * b)
-            elif op == "4":
-                a = int(input("введите первое число: "))
-                b = int(input("Введите второе число: "))
-                print("Результат:", a / b)
-            elif op == "one":
-                a = int(input("Введите наименьшее число диапазона: "))
-                b = int(input('введите наибольшее число диапазона: '))
-                sum_ = 0
-                for i in range(a,b+1):
-                    sum_ += i
-                print(sum_)
-            elif op == "!":
-                a = int(input("введите n: "))
-                quantity = 1
-                for i in range(1, a+1):
-                    quantity *= i
-                print(quantity)
-            elif op == "*":
-                a = int(input("Введи 1: "))
-                b = int(input("Введи 2: "))
-                for i in range(1, b + 1):
-                    print(f"{a}*{i}=", a * i)
-
-            elif op == '0':
-                break
-            else:
-                print("error")
-                break
-else:
-    print("Имя содержит недопустимые символы.")
-
-# a=int(input("загадайте число"))
+# import re
+#
+# user_name = input("Введите имя: ")
+#
+# name_pattern = r'^[A-Za-zА-Яа-я]+$'
+#
+# if re.match(name_pattern, user_name):
+#     if user_name == "Денис":
+#         print("Нет Денисам!")
+#     elif user_name == ("Денис".lower()):
+#         print("Нет Денисам!")
+#     else:
+#         while True:
+#             op = input("какая операшн? ")
+#             if op == "1":
+#                 a = int(input("введите первое число: "))
+#                 b = int(input("Введите второе число: "))
+#                 print("Результат:", a + b)
+#             elif op == "2":
+#                 a = int(input("введите первое число: "))
+#                 b = int(input("Введите второе число: "))
+#                 print("Результат:", a - b)
+#             elif op == "3":
+#                 a = int(input("введите первое число: "))
+#                 b = int(input("Введите второе число: "))
+#                 print("Результат:", a * b)
+#             elif op == "4":
+#                 a = int(input("введите первое число: "))
+#                 b = int(input("Введите второе число: "))
+#                 print("Результат:", a / b)
+#             elif op == "one":
+#                 a = int(input("Введите наименьшее число диапазона: "))
+#                 b = int(input('введите наибольшее число диапазона: '))
+#                 sum_ = 0
+#                 for i in range(a,b+1):
+#                     sum_ += i
+#                 print(sum_)
+#             elif op == "!":
+#                 a = int(input("введите n: "))
+#                 quantity = 1
+#                 for i in range(1, a+1):
+#                     quantity *= i
+#                 print(quantity)
+#             elif op == "*":
+#                 a = int(input("Введи 1: "))
+#                 b = int(input("Введи 2: "))
+#                 for i in range(1, b + 1):
+#                     print(f"{a}*{i}=", a * i)
+#
+#             elif op == '0':
+#                 break
+#             else:
+#                 print("error")
+#                 break
+# else:
+#     print("Имя содержит недопустимые символы.")
 
 
+# Угадайка
 # while True:
 #     b = int(input("угадайте число"))
 #     if b < a:
@@ -92,7 +91,7 @@ else:
 
 
 
-
+# Справка
 # .append() - добавление в конец
 # .pop() - удаление по индексу
 # .remove() - удаление по значению
@@ -100,10 +99,45 @@ else:
 
 
 
+# Списки и ху
+# spis = [6, 5, 10, -4, -5]
+# minn = float("inf")
+# for num in spis:
+#     if num < minn:
+#         minn = num
+# print(minn)
 
-# spis = [6, 5, 10, -4]
-# product = 1
-# for number in spis:
-#     product *= number
+
+# 1. Среднее арифметическое
+# import statistics
 #
-# print("Произведение всех чисел в списке:", product)
+# spiska = [-14, 37, 48, 27, -52, 0, 83, 93, -1]
+#
+# # srednee = sum(spiska) / len(spiska)
+# # print(srednee)
+#
+# srednee = statistics.mean(spiska)
+#
+# print(srednee)
+
+# 2. Кол-во в диапазоне
+# k = 0
+# for num in range(2077, 105793+1):
+#     if(num % 3 == 0 and  num % 7 == 0 and num % 11 != 0 and num % 5 != 0):
+#         k+=1
+# print (k)
+
+# 4. Число в столбик
+# spisok = [13, -7, 32,57,31,-9,0]
+# for num in spisok:
+#     num *= 10
+#     print(num)
+
+# 5. Ну типа сделал список хз
+# sp = []
+# while True:
+#     a = int(input("число: "))
+#     sp.insert(0, a)
+#     if a <= 0:
+#         break
+# print (sp)
