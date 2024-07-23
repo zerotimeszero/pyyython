@@ -141,3 +141,28 @@
 #     if a <= 0:
 #         break
 # print (sp)
+
+
+# N = int(input())
+# k = 0
+# for i in range(N):
+#     num = int(input())
+#     if (num % 2 != 0):
+#         k+=1
+# print(k)
+
+# def count_odd(spis: list):
+#     k = 0
+#     for i in spis:
+#         if (i % 2 != 0):
+#             k+=1
+#     print(k)
+#
+# chisla = [1,4,6,7,3]
+# count_odd(chisla)
+
+# def count_AB(string: str):
+#     k = 0
+#     for i in range(len(string)):
+#         print(i)
+# count_AB("ABABAB")
