@@ -168,6 +168,9 @@
 # count_AB("ABABAB")
 
 
+
+
+
 # 1ифелсе
 
 # a = int(input("Введите число: "))
@@ -206,12 +209,32 @@
 #     print("Этот год не является високосным.")
 
 # 5
-# frst_num = float(input("Введите первое число: "))
-# sec_num = float(input("Введите второе число: "))
-# if frst_num > sec_num:
-#     print("Первое число больше")
-# elif frst_num < sec_num:
-#     print("Второе число больше")
-# else:
-#     print("Числа равны")
+# try:
+#     frst_num = float(input("Введите первое число: "))
+#     sec_num = float(input("Введите второе число: "))
+#     if frst_num > sec_num:
+#         print("Первое число больше")
+#     elif frst_num < sec_num:
+#         print("Второе число больше")
+#     else:
+#         print("Числа равны")
+# except:
+#     print("Пока пользователь!")
 
+
+# 1 cicle
+user_num = int(input("Введите количество билетов: "))
+kolvo_tic = 0
+for i in range(user_num):
+    user_input = (input("Введите номер билета: "))
+    while len(user_input) != 6:
+        user_input = (input("Введите номер билета (6 символов): "))
+    a = int(user_input[0]) + int(user_input[1]) + int(user_input[2])
+    b = int(user_input[3]) + int(user_input[4]) + int(user_input[5])
+    if a == b:
+        print("Билет счастливый! ")
+        kolvo_tic += 1
+    else:
+        print("Билет несчастливый! ")
+print("Количетсво счастливых билетов -", kolvo_tic)
+        # if user_input[0] + user_input[1] + user_input[2] == user_input[3] + user_input[4] + user_input[5]:
