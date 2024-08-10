@@ -61,5 +61,64 @@
 # print(a)
 
 
+# List
+# 1
+# N = int(input("Количество чисел: "))
+# result = []
+# for i in range(N):
+#     num = int(input("Число: "))
+#     if num not in result:
+#         result.append(num)
+# print(result)
 
+# 2
+# a = input().split()
+#
+# for i in range(len(a)):
+#     a[i] = int(a[i])
+# a.sort()
+# print(a)
+# a.sort(reverse=True)
+# print(a)
+
+# 3
+# a = input().split()
+# for i in range(len(a)):
+#     a[i] = int(a[i])
+#
+# b = input().split()
+# for i in range(len(b)):
+#      b[i] = int(b[i])
+#
+# result = []
+#
+# for i in range(len(a)):
+#     result.append(a[i])
+# for i in range(len(b)):
+#     result.append(b[i])
+#
+# print(result)
+
+# 4
+# us_num = int(input("Число: "))
+# list_ = input("Список: ").split()
+#
+# # список = list(map(int, input().split()))
+#
+# for i in range(len(list_)):
+#     list_[i] = int(list_[i])
+#     if list_[i] == us_num:
+#         print (list_[i])
+#         break
+#     else:
+#         print("-1")
+#         break
+
+# 5
+
+# list_ = list(map(int, input().split()))
+# for i in list_[:]:
+#     if i < 0:
+#         list_.remove(i)
+# print(list_)
 
